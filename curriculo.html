@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enzo Linaldi | Currículo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <!-- Header -->
+    <header class="topbar" role="banner">
+      <div class="brand" aria-hidden="false">
+    
+        <div class="titles">
+          <h1>Enzo Linaldi</h1>
+            <p>Auxiliar Administrativo — <a class="link-inline" href="https://www.linkedin.com/in/enzo-linaldi-315204389">LinkedIn</a></p>
+        <div class="subnav">
+          <div class="subnav" aria-label="Navegação secundária">
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="curriculo.html" aria-current="page">Currículo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="top-actions" role="toolbar" aria-label="Ações">
+        <!-- Imprimir -->
+        <button id="btn-print" class="btn ghost" title="Imprimir / Salvar PDF" onclick="window.print()">
+          📄 Imprimir
+        </button>
+
+      </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main role="main" aria-labelledby="perfil-title">
+      <!-- Seção: Perfil Profissional -->
+      <section class="section">
+        <h3 id="perfil-title">Perfil Profissional</h3>
+        <p>Atuo na área administrativa desde 2024, desempenhando funções que envolvem organização, apoio operacional e gestão de documentos. Sou proativo, responsável e adaptável, buscando sempre crescer junto da empresa como profissional e como pessoa.</p>
+      </section>
+
+      <!-- Seção: Experiência Profissional -->
+      <section class="section">
+        <h3>Experiência Profissional</h3>
+
+        <div class="item">
+          <h4>Estagiário - Auxiliar Administrativo</h4>
+          <p class="empresa">LINALDI | Agosto 2024 - Presente</p>
+          <button class="btn ghost" onclick="toggleDetalhes(this)">Mostrar Detalhes</button>
+
+          <div class="detalhes" aria-hidden="true">
+            <p>• Atendimento ao Cliente/Fornecedores;<br>
+               • Organização de Planilhas;<br>
+               • Financeiro.</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <h4>Freelancer - Criação de Sites</h4>
+          <p class="empresa">LocalWeb | Jun 2023 - Dez 2023</p>
+          <button class="btn ghost" onclick="toggleDetalhes(this)">Mostrar Detalhes</button>
+
+          <div class="detalhes" aria-hidden="true">
+            <p>• Desenvolvimento de site na LocalWeb;<br>
+               • Realizado conforme solicitado pelo cliente;<br>
+               • Fotografado produtos para adicionar ao site.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção: Formação Acadêmica -->
+      <section class="section">
+        <h3>Formação Acadêmica</h3>
+        <div class="item">
+          <h4>Ensino Médio Técnico em Tecnologia da Informação</h4>
+          <p class="empresa">Senac Nações Unidas | 2023 - 2025 (Cursando)</p>
+        </div>
+      </section>
+
+      <!-- Seção: Habilidades Técnicas -->
+      <section class="section">
+        <h3>Habilidades Técnicas</h3>
+        <div class="habilidades" role="list">
+          <span class="habilidade" role="listitem">HTML</span>
+          <span class="habilidade" role="listitem">CSS</span>
+          <span class="habilidade" role="listitem">JavaScript</span>
+          <span class="habilidade" role="listitem">Git & GitHub</span>
+          <span class="habilidade" role="listitem">Power BI</span>
+          <span class="habilidade" role="listitem">Metodologias Ágeis</span>
+          <span class="habilidade" role="listitem">Cisco Packet Tracer</span>
+        </div>
+      </section>
+    </main>
+
+    <footer>© 2025 — Desenvolvido por Enzo Linaldi</footer>
+  </div>
+
+  <script>
+    function toggleDetalhes(button) {
+      const detalhes = button.nextElementSibling;
+      if(!detalhes) return;
+      const isVisible = detalhes.style.display === "block";
+      detalhes.style.display = isVisible ? "none" : "block";
+      detalhes.setAttribute('aria-hidden', isVisible ? 'true' : 'false');
+      button.textContent = isVisible ? "Mostrar Detalhes" : "Ocultar Detalhes";
+    }
+  </script>
+</body>
+</html>

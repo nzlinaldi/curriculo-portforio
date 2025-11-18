@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos — Enzo Linaldi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+  <!-- Header -->
+  <header class="topbar" role="banner">
+    <div class="brand" aria-hidden="false">
+      <div class="titles">
+        <h1>Enzo Linaldi</h1>
+        <p>Auxiliar Administrativo — <a class="link-inline" href="https://www.linkedin.com/in/enzo-linaldi-315204389">LinkedIn</a></p>
+        <div class="subnav" aria-label="Navegação secundária">
+          <a href="index.html">Home</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="projetos.html" aria-current="page">Projetos</a>
+          <a href="curriculo.html">Currículo</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="top-actions" role="toolbar" aria-label="Ações">
+      <button id="btn-print" class="btn ghost" title="Imprimir / Salvar PDF" onclick="window.print()">📄 Imprimir</button>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main role="main" aria-labelledby="projetos-title">
+    <!-- Seção: Grade de Projetos -->
+    <section class="section">
+      <h3 id="projetos-title">Projetos de cada área do conhecimento</h3>
+      <p>Clique em uma imagem para ver como o trabalho foi realizado e sua descrição.</p>
+
+      <div class="item" 
+        style="display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+        gap:12px;
+        margin-top:12px;">
+        
+        <!-- CN -->
+        <article>
+          <h4>Ciências da Natureza (CN)</h4>
+          <a href="projetos-cn.html" aria-label="Abrir projeto CN">
+            <img src="images/Apresentação Amida e Amina.png" 
+              alt="Projeto Ciências da Natureza" 
+              style="width:100%;
+              height:150px;
+              object-fit:cover;
+              border-radius:8px;
+              display:block;">
+          </a>
+          <p>Aula invertida sobre Amina e Amida</p>
+        </article>
+
+        <!-- CH -->
+        <article>
+          <h4>Ciências Humanas (CH)</h4>
+          <a href="projetos-ch.html" aria-label="Abrir projeto CH">
+            <img src="images/Ditadura Digital.png" 
+              alt="Projeto Ciências Humanas" 
+              style="width:100%;
+              height:150px;
+              object-fit:cover;
+              border-radius:8px;
+              display:block;">
+          </a>
+          <p>Relação de Byung Chul Han e o Filme Wall-e.</p>
+        </article>
+
+        <!-- TI -->
+        <article>
+          <h4>Tecnologia da Informação (TI)</h4>
+          <a href="projetos-ti.html" aria-label="Abrir projeto TI">
+            <img src="images/AutoRepair.png" 
+              alt="Projeto Tecnologia da Informação" 
+              style="width:100%;
+              height:150px;
+              object-fit:cover;
+              border-radius:8px;
+              display:block;">
+          </a>
+          <p>Desenvolvimento de sistema de gerenciamento mecânica automotiva (Python).</p>
+        </article>
+
+        <!-- Linguagens -->
+        <article>
+          <h4>Linguagens</h4>
+          <a href="projetos-linguagens.html" aria-label="Abrir projeto Linguagens">
+            <img src="images/Masteron.png" 
+              alt="Projeto Linguagens" 
+              style="width:100%;
+              height:150px;
+              object-fit:cover;
+              border-radius:8px;
+              display:block;">
+          </a>
+          <p>Propaganda contra o uso de anabolizantes e pesquisa sobre.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2025 — Desenvolvido por Enzo Linaldi</footer>
+</div>
+</body>
+</html>

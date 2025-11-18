@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home — Enzo Linaldi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="page">
+  <!-- Header -->
+  <header class="topbar" role="banner">
+    <div class="brand" aria-hidden="false">
+      <div class="titles">
+        <h1>Enzo Linaldi</h1>
+        <p>Auxiliar Administrativo — <a class="link-inline" href="https://www.linkedin.com/in/enzo-linaldi-315204389">LinkedIn</a></p>
+        <div class="subnav">
+        <div class="subnav" aria-label="Navegação secundária">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="projetos.html">Projetos</a>
+          <a href="curriculo.html">Currículo</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="top-actions" role="toolbar" aria-label="Ações">
+      <button id="btn-print" class="btn ghost" title="Imprimir / Salvar PDF" onclick="window.print()">📄 Imprimir</button>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main role="main" aria-labelledby="home-title">
+    
+    <!-- Seção: Apresentação -->
+    <section class="section" 
+      id="home-title" 
+      style="display:flex;
+      gap:18px;
+      align-items:center;
+      flex-wrap:wrap;">
+      
+      <div style="flex:1;
+      min-width:260px;">
+        <h1 style="margin:0 0 10px 0;
+        font-size:28px;
+        line-height:1.05;">Olá, eu sou Enzo Linaldi</h1>
+        
+        <p style="margin:0 0 14px 0;
+        color:var(--muted);">Auxiliar Administrativo com foco em organização, processos e atendimenmto à cliente/fornecedor. Ajudo a melhorar processos nos quais ja vem sendo feitos e facilitar o futuro da empresa.</p>
+        
+        <p style="margin:0 0 16px 0;">Quer conhecer minhas experiências?</p>
+        
+        <div style="display:flex;
+        gap:10px;
+        flex-wrap:wrap;">
+          <a class="btn primary" href="projetos.html">Ver Projetos</a>
+          <a class="btn ghost" href="curriculo.html">Ver Currículo</a>
+        </div>
+      </div>
+
+      <div style="flex:0 0 320px;
+      min-width:220px;">
+        <div class="item" 
+          style="padding:12px;">
+          <img src="images/Enzo Linaldi.png" 
+            alt="Foto ou destaque" 
+            style="width:100%;
+            height:180px;
+            object-fit:cover;
+            border-radius:8px;
+            display:block;
+            margin-bottom:10px;">
+          
+          <h4 style="margin:0 0 6px 0;">Profissional &amp; Proativo</h4>
+          <p style="margin:0;
+          color:var(--muted);">Busco soluções e aprimoramento para projetos e empresas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção: Sobre o Trabalho -->
+    <section class="section">
+      <div class="item">
+        <h4>Sobre meu trabalho</h4>
+        <p>Acredito que processos organizados fazem qualquer ambiente funcionar melhor. Trabalho com eficiência, clareza e responsabilidade para ajudar equipes a terem uma rotina mais simples, rápida e produtiva. Estou sempre evoluindo e aprendendo novas formas de melhorar fluxos, documentos e operações.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2025 — Desenvolvido por Enzo Linaldi</footer>
+</div>
+</body>
+</html>
